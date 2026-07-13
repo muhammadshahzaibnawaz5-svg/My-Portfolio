@@ -49,47 +49,53 @@
 
   <!-- ─── Navigation ──────────────────────────────────────────────── -->
   <header>
-  <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 py-5 transition-all duration-500">
+  <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
 
-      <a href="#hero" class="text-xl font-display font-bold tracking-tight text-star-white">
-        <span class="text-accent">S</span>hahzaib
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo-mark group" aria-label="Home">
+        <div class="logo-icon group-hover:scale-105 transition-transform duration-300">S</div>
+        <span class="text-base font-bold gradient-text-accent tracking-tight">hahzaib</span>
       </a>
 
       <!-- Desktop nav -->
-      <div id="nav-menu" class="hidden md:flex items-center gap-8">
-        <a href="#hero"     class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Home</a>
-        <a href="#about"    class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">About</a>
-        <a href="#services" class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Skills</a>
-        <a href="#projects" class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Projects</a>
+      <div id="nav-menu" class="hidden md:flex items-center gap-7">
+        <a href="#hero"         class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Home</a>
+        <a href="#about"        class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">About</a>
+        <a href="#services"     class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Skills</a>
+        <a href="#projects"     class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Projects</a>
         <a href="#achievements" class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Achievements</a>
-        <a href="#resume"   class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Resume</a>
-        <a href="#contact"  class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Contact</a>
-        <a href="#contact" class="btn-primary !py-2.5 !px-6 !text-xs">
+        <a href="#resume"       class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Resume</a>
+        <a href="#contact"      class="nav-link text-sm font-medium text-cosmic-dust hover:text-star-white transition-colors duration-300">Contact</a>
+        <a href="#contact" class="btn-primary !py-2.5 !px-6 !text-xs !font-semibold">
           Let's Talk
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
         </a>
       </div>
 
       <!-- Mobile toggle -->
-      <button id="menu-toggle" class="md:hidden text-cosmic-dust hover:text-star-white p-2 transition-colors" aria-label="Toggle menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+      <button id="menu-toggle" class="md:hidden text-cosmic-dust hover:text-star-white p-2 transition-colors rounded-lg hover:bg-white/5" aria-label="Toggle menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
 
     <!-- Mobile Menu -->
     <div id="mobile-menu"
-         class="hidden md:hidden absolute top-full left-0 right-0 bg-nebula-core/95 backdrop-blur-xl border-t border-white/5">
-      <div class="px-6 py-5 flex flex-col gap-1">
-        <a href="#hero"     class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Home</a>
-        <a href="#about"    class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">About</a>
-        <a href="#services" class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Skills</a>
-        <a href="#projects" class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Projects</a>
+         class="hidden md:hidden absolute top-full left-0 right-0 border-t border-white/5"
+         style="background: rgba(3,3,10,0.97); backdrop-filter: blur(32px);">
+      <div class="px-6 py-6 flex flex-col gap-1">
+        <a href="#hero"         class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Home</a>
+        <a href="#about"        class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">About</a>
+        <a href="#services"     class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Skills</a>
+        <a href="#projects"     class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Projects</a>
         <a href="#achievements" class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Achievements</a>
-        <a href="#resume"   class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Resume</a>
-        <a href="#contact"  class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Contact</a>
-        <a href="#contact" class="btn-primary !py-3 !px-6 !text-xs mt-3 justify-center">
+        <a href="#resume"       class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Resume</a>
+        <a href="#contact"      class="text-sm font-medium text-cosmic-dust hover:text-star-white py-3 border-b border-white/5 transition-colors">Contact</a>
+        <a href="#contact" class="btn-primary !py-3 !px-6 !text-xs mt-4 justify-center">
           Let's Talk
         </a>
       </div>
@@ -102,52 +108,53 @@
   <main id="main-content">
   <section id="hero" class="hero-section">
 
-    <!-- Subtle atmospheric glow behind content, over Galaxy -->
-    <div class="absolute top-1/3 -left-24 w-125 h-125 bg-accent/5 rounded-full blur-[140px] pointer-events-none z-[1]"></div>
-    <div class="absolute bottom-1/4 -right-16 w-100 h-100 bg-purple/5 rounded-full blur-[120px] pointer-events-none z-[1]"></div>
+    <!-- Atmospheric glows behind content -->
+    <div class="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-accent/[0.06] rounded-full blur-[160px] pointer-events-none z-[1]"></div>
+    <div class="absolute bottom-1/3 -right-20 w-[400px] h-[400px] bg-purple/[0.05] rounded-full blur-[140px] pointer-events-none z-[1]"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-accent/[0.025] rounded-full blur-[120px] pointer-events-none z-[1]"></div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-36 w-full">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-24 sm:py-36 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
         <!-- Left: Text -->
         <div>
           <!-- Available badge -->
-          <div class="hero-el d0 hero-badge">
+          <div class="hero-el d0 hero-badge mb-7 w-fit">
             <span class="relative flex w-2 h-2">
               <span class="live-ping absolute inline-flex h-full w-full rounded-full bg-aurora opacity-75"></span>
               <span class="relative inline-flex w-2 h-2 rounded-full bg-aurora"></span>
             </span>
-            <span class="text-xs font-medium text-cosmic-dust tracking-wider uppercase">Available for Work</span>
+            <span class="text-[11px] font-semibold text-aurora tracking-widest uppercase">Available for Work</span>
+          </div>
+
+          <!-- Role label -->
+          <div class="hero-el d1 flex items-center gap-3 mb-5">
+            <div class="h-px flex-1 max-w-[3rem] bg-accent/30"></div>
+            <span class="text-[11px] font-bold tracking-[5px] text-accent/80 uppercase font-display">FullStack Developer</span>
           </div>
 
           <!-- Name block -->
-          <div class="hero-el d1 mb-4">
-            <div class="flex items-center gap-4 mb-5">
-              <span class="cosmic-divider !gap-3 flex-1">
-                <span class="divider-dot"></span>
-              </span>
-              <span class="text-xs font-semibold tracking-[4px] text-accent uppercase font-display">FullStack Developer</span>
-            </div>
-            <h1 class="font-display-alt font-bold leading-[0.88] text-5xl md:text-6xl lg:text-7xl xl:text-[82px] text-star-white">
+          <div class="hero-el d1 mb-6">
+            <h1 class="font-display-alt font-bold leading-[0.9] text-5xl md:text-6xl lg:text-7xl xl:text-[80px] text-star-white">
               Hi, I'm<br>
               <span class="font-display-alt shimmer-text">M Shahzaib</span>
             </h1>
           </div>
 
           <!-- Description -->
-          <p class="hero-el d2 text-cosmic-dust font-decorative leading-relaxed max-w-xl mb-10 text-base sm:text-lg">
+          <p class="hero-el d2 text-stardust font-decorative leading-relaxed max-w-lg mb-10 text-base sm:text-[1.05rem]">
             Recent FullStack Developer passionate about building clean, functional web apps — from database to frontend.
           </p>
 
           <!-- CTA buttons -->
           <div class="hero-el d3 flex flex-wrap gap-4 mb-12">
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">
-              <span>Download CV</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
               </svg>
+              <span>Download CV</span>
             </a>
-            <a href="#services" class="btn-secondary">
+            <a href="#projects" class="btn-secondary">
               <span>View Work</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -156,19 +163,20 @@
           </div>
 
           <!-- Socials -->
-          <div class="hero-el d4 flex gap-3">
+          <div class="hero-el d4 flex items-center gap-3">
+            <span class="text-[10px] text-cosmic-dust tracking-[3px] uppercase mr-1">Find me</span>
             <a href="https://github.com/muhammadshahzaibnawaz5-svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
-              <svg class="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-[17px] h-[17px]" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
               </svg>
             </a>
             <a href="https://www.linkedin.com/in/muhammad-shahzaib-687219410/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
-              <svg class="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-[17px] h-[17px]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
             <a href="https://x.com/@shahzaibefi8" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" class="social-btn">
-              <svg class="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-[17px] h-[17px]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
             </a>
@@ -176,95 +184,109 @@
         </div>
 
         <!-- Right: Orbital visual -->
-        <div class="hero-el d2 flex justify-center lg:justify-end mt-8 lg:mt-0 overflow-visible">
-          <div class="relative w-56 h-56 sm:w-72 sm:h-72 md:w-95 md:h-95 lg:w-105 lg:h-105">
+        <div class="hero-el d2 flex justify-center lg:justify-end mt-8 lg:mt-0">
+          <div class="relative w-60 h-60 sm:w-72 sm:h-72 md:w-96 md:h-96 lg:w-[26rem] lg:h-[26rem]">
 
             <!-- Outer orbit ring -->
-            <div class="orbit-ring absolute inset-0 rounded-full border border-white/5">
+            <div class="orbit-ring absolute inset-0 rounded-full" style="border: 1px solid rgba(232,64,92,0.08);">
               <div class="orbit-dot absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2
                           w-3 h-3 bg-accent text-accent"></div>
             </div>
 
             <!-- Middle orbit ring -->
-            <div class="orbit-ring ccw absolute inset-8 rounded-full border border-accent/10">
+            <div class="orbit-ring ccw absolute inset-8 rounded-full" style="border: 1px solid rgba(212,168,67,0.1);">
               <div class="orbit-dot absolute bottom-0 right-1/4
                           w-2.5 h-2.5 bg-gold text-gold"></div>
             </div>
 
             <!-- Inner ring -->
-            <div class="orbit-ring absolute inset-14 rounded-full border border-purple/12">
+            <div class="orbit-ring absolute inset-16 rounded-full" style="border: 1px dashed rgba(124,107,255,0.1);">
               <div class="orbit-dot absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2
                           w-2 h-2 bg-purple text-purple"></div>
             </div>
 
             <!-- Central card -->
-            <div class="float-el absolute inset-20 flex items-center justify-center">
+            <div class="float-el absolute inset-24 flex items-center justify-center">
               <div class="w-full h-full rounded-full glass-strong
                           flex flex-col items-center justify-center gap-1.5 glow-accent">
                 <span class="font-display text-4xl md:text-5xl font-bold gradient-text-accent">&lt;/&gt;</span>
-                <p class="text-cosmic-dust text-[10px] tracking-[3px] uppercase">Frontend Dev</p>
+                <p class="text-cosmic-dust text-[9px] tracking-[3.5px] uppercase">Dev</p>
               </div>
             </div>
 
             <!-- Floating tech badges -->
-            <div class="hero-el d3 hidden sm:block absolute -top-2 right-4 md:right-0
-                        px-3 py-1.5 glass rounded-lg text-xs font-medium text-star-white shadow-lg">
+            <div class="hero-el d3 hidden sm:block absolute -top-3 right-2 md:right-0 floating-badge">
               React.js
             </div>
-            <div class="hero-el d4 hidden sm:block absolute bottom-8 -left-4 md:-left-8
-                        px-3 py-1.5 glass rounded-lg text-xs font-medium text-star-white shadow-lg">
+            <div class="hero-el d4 hidden sm:block absolute bottom-10 -left-6 md:-left-10 floating-badge">
               TypeScript
             </div>
-            <div class="hero-el d5 hidden sm:block absolute top-1/2 -right-2 md:-right-10
-                        px-3 py-1.5 glass rounded-lg text-xs font-medium text-star-white shadow-lg">
+            <div class="hero-el d5 hidden sm:block absolute top-1/2 -right-4 md:-right-12 floating-badge">
               Node.js
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Stats Row -->
+      <div class="hero-el d5 mt-16 sm:mt-20 pt-8 sm:pt-10 border-t border-white/[0.06] overflow-hidden relative w-full">
+        <!-- Fade edges -->
+        <div class="absolute left-0 top-0 w-28 h-full bg-gradient-to-r from-deep-space/95 to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 w-28 h-full bg-gradient-to-l from-deep-space/95 to-transparent z-10 pointer-events-none"></div>
 
-
-
-
-
-
-
-
-
-      <!-- Premium Auto-Scrolling Stats Row -->
-<div class="hero-el d5 mt-14 sm:mt-20 pt-8 sm:pt-10 border-t border-white/5 overflow-hidden relative w-full">
-
-  <!-- Fade edges -->
-  <div class="absolute left-0 top-0 w-24 h-full bg-linear-to-r from-deep-space/95 to-transparent z-10"></div>
-  <div class="absolute right-0 top-0 w-24 h-full bg-linear-to-l from-deep-space/95 to-transparent z-10"></div>
-
-  <!-- Scrolling container -->
-  <div class="flex animate-marquee gap-6 w-max">
-
-    <div class="flex gap-6">
-      <div class="stat-card"><p class="stat-number text-accent">1</p><p class="stat-label">Year Experience</p></div>
-      <div class="stat-card"><p class="stat-number text-star-white">3+</p><p class="stat-label">Projects Delivered</p></div>
-      <div class="stat-card"><p class="stat-number text-star-white">2+</p><p class="stat-label">Clients</p></div>
-
-      <div class="stat-card"><p class="stat-number text-star-white">100%</p><p class="stat-label">Client Satisfaction</p></div>
-      <div class="stat-card"><p class="stat-number text-accent">24/7</p><p class="stat-label">Support</p></div>
+        <div class="flex animate-marquee gap-5 w-max">
+          <div class="flex gap-5">
+            <div class="stat-card">
+              <p class="stat-number gradient-text-accent">1</p>
+              <p class="stat-label">Year Experience</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number text-star-white">3+</p>
+              <p class="stat-label">Projects Delivered</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number text-star-white">2+</p>
+              <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number text-star-white">100%</p>
+              <p class="stat-label">Client Satisfaction</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number gradient-text-accent">24/7</p>
+              <p class="stat-label">Availability</p>
+            </div>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="flex gap-5" aria-hidden="true">
+            <div class="stat-card">
+              <p class="stat-number gradient-text-accent">1</p>
+              <p class="stat-label">Year Experience</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number text-star-white">3+</p>
+              <p class="stat-label">Projects Delivered</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number text-star-white">2+</p>
+              <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number text-star-white">100%</p>
+              <p class="stat-label">Client Satisfaction</p>
+            </div>
+            <div class="stat-card">
+              <p class="stat-number gradient-text-accent">24/7</p>
+              <p class="stat-label">Availability</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="flex gap-6">
-      <div class="stat-card"><p class="stat-number text-accent">1</p><p class="stat-label">Year Experience</p></div>
-      <div class="stat-card"><p class="stat-number text-star-white">3+</p><p class="stat-label">Projects Delivered</p></div>
-      <div class="stat-card"><p class="stat-number text-star-white">2+</p><p class="stat-label">Clients</p></div>
-
-      <div class="stat-card"><p class="stat-number text-star-white">100%</p><p class="stat-label">Client Satisfaction</p></div>
-      <div class="stat-card"><p class="stat-number text-accent">24/7</p><p class="stat-label">Support</p></div>
-    </div>
-  </div>
-</div>
 
     <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-      <span class="text-[10px] text-cosmic-dust tracking-[4px] uppercase font-body">Scroll</span>
+    <div class="scroll-indicator z-10">
+      <span class="text-[9px] text-cosmic-dust tracking-[4px] uppercase font-body">Scroll</span>
       <div class="scroll-mouse">
         <div class="scroll-dot"></div>
       </div>
@@ -274,40 +296,76 @@
 
   <!-- ─── About Me ─────────────────────────────────────────────────── -->
   <section id="about" class="relative py-20 sm:py-28 md:py-36">
-    <div class="absolute inset-0 bg-linear-to-b from-transparent via-nebula-mid/10 to-transparent pointer-events-none"></div>
+    <div class="section-glow-blob w-[400px] h-[400px] bg-accent top-1/2 left-1/4" style="opacity:0.04;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-
       <div class="section-wrap">
 
         <div class="about-grid">
 
+          <!-- Avatar -->
           <div class="reveal flex justify-center">
-            <div class="about-avatar">
-              <img src="/src/assets/Shahziab.png" alt="M Shahzaib portrait" loading="lazy">
+            <div class="about-avatar-wrap">
+              <div class="about-avatar-ring-2"></div>
+              <div class="about-avatar-ring">
+                <div class="about-avatar-dot"></div>
+              </div>
+              <div class="about-avatar">
+                <img src="/src/assets/Shahziab.png" alt="M Shahzaib portrait" loading="lazy">
+              </div>
             </div>
           </div>
 
+          <!-- Content -->
           <div class="reveal reveal-d1">
-            <span class="section-label">About</span>
+            <span class="section-label">About Me</span>
+
             <h2 class="font-display-alt font-bold text-3xl md:text-4xl text-star-white mt-6 leading-tight">
-              Building the Web,<br>One Component at a Time
+              Building the Web,<br>
+              <span class="gradient-text-accent">One Component</span> at a Time
             </h2>
-            <p class="text-cosmic-dust mt-5 leading-relaxed font-decorative text-base">
-              I'm a frontend developer passionate about crafting clean, responsive, and accessible web experiences. 
-              Currently focused on mastering React, Tailwind CSS, and modern JavaScript to build projects that 
+
+            <p class="text-stardust mt-5 leading-relaxed font-decorative text-[0.95rem]">
+              I'm a frontend developer passionate about crafting clean, responsive, and accessible web experiences.
+              Currently focused on mastering React, Tailwind CSS, and modern JavaScript to build projects that
               solve real problems and look great doing it.
             </p>
-            <p class="text-cosmic-dust mt-3 leading-relaxed font-decorative text-base">
-              Every project I build is a step forward — from static layouts to dynamic single-page applications. 
-              I believe in writing code that's both performant and readable, and I'm always exploring new tools 
+            <p class="text-stardust mt-3 leading-relaxed font-decorative text-[0.95rem]">
+              Every project I build is a step forward — from static layouts to dynamic single-page applications.
+              I believe in writing code that's both performant and readable, and I'm always exploring new tools
               to level up my craft.
             </p>
-            <div class="flex flex-wrap gap-3 mt-8">
-              <span class="px-3 py-1.5 bg-accent/[0.08] text-accent text-xs font-medium rounded-full border border-accent/15">React</span>
-              <span class="px-3 py-1.5 bg-accent/[0.08] text-accent text-xs font-medium rounded-full border border-accent/15">Tailwind CSS</span>
-              <span class="px-3 py-1.5 bg-accent/[0.08] text-accent text-xs font-medium rounded-full border border-accent/15">JavaScript</span>
-              <span class="px-3 py-1.5 bg-accent/[0.08] text-accent text-xs font-medium rounded-full border border-accent/15">Responsive Design</span>
+
+            <!-- Info pills -->
+            <div class="flex flex-wrap gap-2.5 mt-7">
+              <div class="info-pill">
+                <svg class="icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                Punjab, Pakistan
+              </div>
+              <div class="info-pill">
+                <svg class="icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Open to Remote
+              </div>
+              <div class="info-pill">
+                <svg class="icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                B.S. Software Eng.
+              </div>
+            </div>
+
+            <!-- Tech tags -->
+            <div class="flex flex-wrap gap-2.5 mt-5">
+              <span class="px-3.5 py-1.5 bg-accent/[0.08] text-accent text-xs font-semibold rounded-full border border-accent/20">React</span>
+              <span class="px-3.5 py-1.5 bg-accent/[0.08] text-accent text-xs font-semibold rounded-full border border-accent/20">Tailwind CSS</span>
+              <span class="px-3.5 py-1.5 bg-accent/[0.08] text-accent text-xs font-semibold rounded-full border border-accent/20">JavaScript</span>
+              <span class="px-3.5 py-1.5 bg-accent/[0.08] text-accent text-xs font-semibold rounded-full border border-accent/20">Node.js</span>
+              <span class="px-3.5 py-1.5 bg-purple/[0.08] text-purple text-xs font-semibold rounded-full border border-purple/20">TypeScript</span>
             </div>
           </div>
 
@@ -318,19 +376,18 @@
 
   <!-- ─── Skills / Services ────────────────────────────────────────── -->
   <section id="services" class="relative py-20 sm:py-28 md:py-36">
-    <div class="absolute inset-0 bg-linear-to-b from-transparent via-nebula-mid/20 to-transparent pointer-events-none"></div>
+    <div class="section-glow-blob w-[500px] h-[300px] bg-purple top-1/2 right-0" style="opacity:0.04;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-
       <div class="section-wrap">
 
         <!-- Section header -->
         <div class="text-center mb-14 sm:mb-20 reveal">
           <span class="section-label">Expertise</span>
-          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-8 leading-tight">
-            Technologies I Work With
+          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-7 leading-tight">
+            Technologies I <span class="gradient-text-accent">Work With</span>
           </h2>
-          <p class="text-cosmic-dust max-w-xl mx-auto mt-5 leading-relaxed font-decorative text-base">
+          <p class="text-stardust max-w-lg mx-auto mt-5 leading-relaxed font-decorative text-[0.95rem]">
             Building modern, responsive, and performant web experiences using industry-leading tools.
           </p>
         </div>
@@ -340,17 +397,18 @@
 
           <!-- HTML5 -->
           <div class="skill-card reveal reveal-d1">
+            <span class="skill-card-number">01</span>
             <div class="relative z-10">
-              <div class="skill-icon" style="background: rgba(232,64,92,0.1); color: var(--color-accent);">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <div class="skill-icon" style="background: rgba(232,64,92,0.1); color: var(--color-accent); border: 1px solid rgba(232,64,92,0.15);">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4.136 3.012h15.729l-1.431 16.15-6.439 1.826-6.422-1.826zM16.316 7.04H7.765l.174 2.026h8.209l-.522 5.833-3.625 1.007-3.636-1.007-.247-2.76H9.98l.127 1.396 1.895.522 1.89-.522.2-2.258H7.608L7.258 7.04z"/>
                 </svg>
               </div>
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="font-display text-lg font-semibold text-star-white">HTML5</h3>
+              <div class="flex items-center justify-between mb-2.5">
+                <h3 class="font-display text-base font-bold text-star-white">HTML5</h3>
                 <span class="skill-tag">Markup</span>
               </div>
-              <p class="text-cosmic-dust text-sm leading-relaxed">
+              <p class="text-stardust text-sm leading-relaxed">
                 Semantic markup, accessibility best practices, SEO optimisation, and structured content.
               </p>
             </div>
@@ -358,17 +416,18 @@
 
           <!-- CSS3 -->
           <div class="skill-card reveal reveal-d1">
+            <span class="skill-card-number">02</span>
             <div class="relative z-10">
-              <div class="skill-icon" style="background: rgba(59,130,246,0.1); color: #60a5fa;">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <div class="skill-icon" style="background: rgba(59,130,246,0.1); color: #60a5fa; border: 1px solid rgba(59,130,246,0.15);">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4.192 3.143h15.616l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.598-.145-1.635H7.6l.289 3.24 4.102 1.17 4.08-1.162.739-8.115z"/>
                 </svg>
               </div>
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="font-display text-lg font-semibold text-star-white">CSS3</h3>
+              <div class="flex items-center justify-between mb-2.5">
+                <h3 class="font-display text-base font-bold text-star-white">CSS3</h3>
                 <span class="skill-tag">Styling</span>
               </div>
-              <p class="text-cosmic-dust text-sm leading-relaxed">
+              <p class="text-stardust text-sm leading-relaxed">
                 Flexbox, CSS Grid, animations, responsive design patterns, and modern layout techniques.
               </p>
             </div>
@@ -376,17 +435,18 @@
 
           <!-- JavaScript -->
           <div class="skill-card reveal reveal-d2">
+            <span class="skill-card-number">03</span>
             <div class="relative z-10">
-              <div class="skill-icon" style="background: rgba(234,179,8,0.1); color: #facc15;">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <div class="skill-icon" style="background: rgba(234,179,8,0.1); color: #facc15; border: 1px solid rgba(234,179,8,0.15);">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.91.276.58.206 1.2.166 1.32l-.67 2.758c-.02.104-.055.207-.108.297l.008-.015zm-3.43-8.217c.578-.89 1.602-1.344 2.776-1.256 1.022.077 1.838.55 2.33 1.268l-1.88 1.132c-.316-.428-.73-.656-1.217-.606-.404.04-.752.295-.752.722 0 .21.078.408.228.57l.62.63c.978.993 1.487 1.797 1.487 3.11 0 1.767-1.408 2.98-3.336 2.98-1.726 0-2.965-.792-3.575-2.004l1.936-1.118c.39.718.964 1.135 1.765 1.135.655 0 1.108-.332 1.108-.846 0-.384-.193-.65-.65-1.02l-.787-.684c-1.308-1.136-1.69-1.97-1.636-3.19.065-1.446 1.044-2.525 2.584-2.82zm-9.094-6.59c1.252-.11 2.246.41 2.822 1.32l-1.938 1.132c-.325-.448-.78-.657-1.263-.606-.404.04-.753.295-.753.722 0 .21.078.408.228.57l.62.63c.98.992 1.488 1.796 1.488 3.11 0 1.767-1.41 2.98-3.337 2.98-1.725 0-2.964-.792-3.574-2.005l1.936-1.117c.39.717.963 1.134 1.764 1.134.655 0 1.108-.332 1.108-.845 0-.384-.193-.65-.648-1.02l-.787-.684C4.25 8.99 3.87 8.156 3.922 6.936c.066-1.447 1.045-2.526 2.585-2.821l.003.354z"/>
                 </svg>
               </div>
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="font-display text-lg font-semibold text-star-white">JavaScript</h3>
+              <div class="flex items-center justify-between mb-2.5">
+                <h3 class="font-display text-base font-bold text-star-white">JavaScript</h3>
                 <span class="skill-tag">ES2024</span>
               </div>
-              <p class="text-cosmic-dust text-sm leading-relaxed">
+              <p class="text-stardust text-sm leading-relaxed">
                 ES6+, async/await, DOM manipulation, and building rich interactive web experiences.
               </p>
             </div>
@@ -394,17 +454,18 @@
 
           <!-- Tailwind CSS -->
           <div class="skill-card reveal reveal-d2">
+            <span class="skill-card-number">04</span>
             <div class="relative z-10">
-              <div class="skill-icon" style="background: rgba(6,182,212,0.1); color: #22d3ee;">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <div class="skill-icon" style="background: rgba(6,182,212,0.1); color: #22d3ee; border: 1px solid rgba(6,182,212,0.15);">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8 c0.913,0.228,1.565,0.89,2.288,1.624c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8 c-0.913-0.228-1.565-0.89-2.288-1.624C10.337,13.382,8.976,12,6.001,12z"/>
                 </svg>
               </div>
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="font-display text-lg font-semibold text-star-white">Tailwind CSS</h3>
+              <div class="flex items-center justify-between mb-2.5">
+                <h3 class="font-display text-base font-bold text-star-white">Tailwind CSS</h3>
                 <span class="skill-tag">v4</span>
               </div>
-              <p class="text-cosmic-dust text-sm leading-relaxed">
+              <p class="text-stardust text-sm leading-relaxed">
                 Utility-first framework for rapid UI development with modern design system integration.
               </p>
             </div>
@@ -412,17 +473,18 @@
 
           <!-- React JS -->
           <div class="skill-card reveal reveal-d3">
+            <span class="skill-card-number">05</span>
             <div class="relative z-10">
-              <div class="skill-icon" style="background: rgba(8,145,178,0.1); color: #06b6d4;">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <div class="skill-icon" style="background: rgba(8,145,178,0.1); color: #06b6d4; border: 1px solid rgba(8,145,178,0.15);">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.353.801-1.786 3.431-.996 6.568.338 1.327.805 2.728 1.373 4.023-1.02 2.1-1.47 4.076-1.154 5.475.384 1.7 1.8 2.388 3.4 1.97 1.338-.342 2.806-1.294 4.286-2.72 1.4 1.344 2.828 2.267 4.12 2.634 1.697.49 3.2-.136 3.627-1.882.35-1.444-.15-3.42-1.174-5.47 1.055-1.942 1.65-3.958 1.65-5.54C19.31 3.094 17.15 1.314 16.878 1.314zm-.154 12.67c-.357.233-.732.451-1.116.654.114.428.208.856.28 1.272.407 2.28.112 4.044-.772 4.547-.907.514-2.574-.015-4.32-1.606a33.027 33.027 0 0 1-.823-.838c-.272.285-.552.568-.84.84-1.793 1.612-3.47 2.147-4.385 1.612-.904-.523-1.186-2.295-.78-4.583.068-.426.163-.86.273-1.294-.37-.196-.73-.407-1.077-.63-1.843-1.2-2.894-2.65-2.608-3.81.278-1.136 1.692-1.754 3.657-1.754.476 0 .985.04 1.516.12a33.36 33.36 0 0 1-.115-.77c-.252-2.24.238-3.953 1.135-4.478.91-.532 2.59.003 4.36 1.55a33.022 33.022 0 0 1 .73.692 32.59 32.59 0 0 1 .72-.688c1.773-1.566 3.467-2.11 4.38-1.567.896.534 1.387 2.26 1.124 4.525a33.35 33.35 0 0 1-.108.754c.542-.082 1.065-.122 1.552-.122 1.972 0 3.387.624 3.666 1.752.287 1.165-.754 2.612-2.59 3.81z"/>
                 </svg>
               </div>
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="font-display text-lg font-semibold text-star-white">React JS</h3>
+              <div class="flex items-center justify-between mb-2.5">
+                <h3 class="font-display text-base font-bold text-star-white">React JS</h3>
                 <span class="skill-tag">v19</span>
               </div>
-              <p class="text-cosmic-dust text-sm leading-relaxed">
+              <p class="text-stardust text-sm leading-relaxed">
                 Component architecture, hooks, context API, and modern state management patterns.
               </p>
             </div>
@@ -430,17 +492,18 @@
 
           <!-- Node JS -->
           <div class="skill-card reveal reveal-d3">
+            <span class="skill-card-number">06</span>
             <div class="relative z-10">
-              <div class="skill-icon" style="background: rgba(22,163,74,0.1); color: #4ade80;">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+              <div class="skill-icon" style="background: rgba(22,163,74,0.1); color: #4ade80; border: 1px solid rgba(22,163,74,0.15);">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339c.082.045.198.045.275 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242l-8.791-5.072c-.081-.047-.189-.047-.271 0L3.075 6.68c-.084.05-.139.143-.139.241v10.15c0 .097.055.189.137.236l2.408 1.392c1.307.654 2.108-.116 2.108-.891V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.111.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675A1.85 1.85 0 0 1 1.358 17.1V6.921a1.85 1.85 0 0 1 .922-1.606l8.795-5.082c.557-.315 1.296-.315 1.848 0l8.794 5.082c.568.329.922.935.922 1.606v10.178c0 .671-.354 1.277-.922 1.606l-8.795 5.076c-.28.163-.6.247-.924.247z"/>
                 </svg>
               </div>
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="font-display text-lg font-semibold text-star-white">Node.js</h3>
+              <div class="flex items-center justify-between mb-2.5">
+                <h3 class="font-display text-base font-bold text-star-white">Node.js</h3>
                 <span class="skill-tag">Backend</span>
               </div>
-              <p class="text-cosmic-dust text-sm leading-relaxed">
+              <p class="text-stardust text-sm leading-relaxed">
                 Server-side JavaScript, RESTful APIs, Express.js, and database integration.
               </p>
             </div>
@@ -454,36 +517,36 @@
 
   <!-- ─── Projects ─────────────────────────────────────────────────── -->
   <section id="projects" class="relative py-20 sm:py-28 md:py-36">
-    <div class="absolute inset-0 bg-linear-to-b from-transparent via-nebula-mid/20 to-transparent pointer-events-none"></div>
+    <div class="section-glow-blob w-[350px] h-[350px] bg-accent top-1/3 left-1/2 -translate-x-1/2" style="opacity:0.04;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-
       <div class="section-wrap">
 
         <!-- Section header -->
         <div class="text-center mb-14 sm:mb-20 reveal">
           <span class="section-label">Projects</span>
-          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-8 leading-tight">
-            Things I've Built
+          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-7 leading-tight">
+            Things I've <span class="gradient-text-accent">Built</span>
           </h2>
-          <p class="text-cosmic-dust max-w-xl mx-auto mt-5 leading-relaxed font-decorative text-base">
+          <p class="text-stardust max-w-lg mx-auto mt-5 leading-relaxed font-decorative text-[0.95rem]">
             A collection of projects showcasing my skills in frontend development and modern web technologies.
           </p>
         </div>
 
         <!-- Projects grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <!-- Project 1 -->
+          <!-- Project 1 — Bloom Bags -->
           <div class="project-card reveal reveal-d1">
-            <div class="project-image">
+            <div class="project-image" style="background: radial-gradient(ellipse at 30% 50%, rgba(232,64,92,0.16) 0%, rgba(124,107,255,0.07) 55%, transparent 85%);">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
               </svg>
+              <span class="project-number">01 — E-Commerce</span>
             </div>
             <div class="project-body">
-              <h3 class="font-display text-base font-semibold text-star-white">Bloom Bags — E-Commerce Store</h3>
-              <p class="text-cosmic-dust text-sm mt-1.5 leading-relaxed">
+              <h3 class="font-display font-bold text-star-white">Bloom Bags — E-Commerce Store</h3>
+              <p class="text-stardust leading-relaxed">
                 A fully responsive e-commerce platform for bags with product listings, cart functionality, and a clean modern UI built with React and Tailwind CSS.
               </p>
               <div class="project-tech">
@@ -494,7 +557,7 @@
               <div class="project-links">
                 <a href="https://github.com/muhammadshahzaibnawaz5-svg/Bloom-Bags-E-Commerce-Store.git" target="_blank" rel="noopener noreferrer" class="project-link">
                   <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                  Code
+                  Source Code
                 </a>
                 <a href="https://bloom-bags-e-commerce-store.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -504,16 +567,17 @@
             </div>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Project 2 — Watch Store -->
           <div class="project-card reveal reveal-d2">
-            <div class="project-image">
+            <div class="project-image" style="background: radial-gradient(ellipse at 60% 40%, rgba(212,168,67,0.14) 0%, rgba(232,64,92,0.06) 55%, transparent 85%);">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0013 3.06V1h-2v2.06A8.994 8.994 0 003.06 11H1v2h2.06A8.994 8.994 0 0011 20.94V23h2v-2.06A8.994 8.994 0 0020.94 13H23v-2h-2.06z"/>
               </svg>
+              <span class="project-number">02 — Watch Store</span>
             </div>
             <div class="project-body">
-              <h3 class="font-display text-base font-semibold text-star-white">Times To Trend — Watch Store</h3>
-              <p class="text-cosmic-dust text-sm mt-1.5 leading-relaxed">
+              <h3 class="font-display font-bold text-star-white">Times To Trend — Watch Store</h3>
+              <p class="text-stardust leading-relaxed">
                 A stylish watch e-commerce site featuring product showcases, detailed product pages, and a seamless shopping experience with a responsive design.
               </p>
               <div class="project-tech">
@@ -524,7 +588,7 @@
               <div class="project-links">
                 <a href="https://github.com/muhammadshahzaibnawaz5-svg/Times-To-Trend-Watch-Store.git" target="_blank" rel="noopener noreferrer" class="project-link">
                   <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                  Code
+                  Source Code
                 </a>
                 <a href="https://times-to-trend-watch-store.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -534,16 +598,17 @@
             </div>
           </div>
 
-          <!-- Project 3 -->
+          <!-- Project 3 — VaultX -->
           <div class="project-card reveal reveal-d3">
-            <div class="project-image">
+            <div class="project-image" style="background: radial-gradient(ellipse at 50% 40%, rgba(124,107,255,0.16) 0%, rgba(72,229,194,0.06) 55%, transparent 85%);">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
               </svg>
+              <span class="project-number">03 — Full Stack</span>
             </div>
             <div class="project-body">
-              <h3 class="font-display text-base font-semibold text-star-white">VaultX — Secure Notes & Anything</h3>
-              <p class="text-cosmic-dust text-sm mt-1.5 leading-relaxed">
+              <h3 class="font-display font-bold text-star-white">VaultX — Secure Notes &amp; Anything</h3>
+              <p class="text-stardust leading-relaxed">
                 A full-stack secure notes application with user authentication, encrypted storage, and a clean interface for managing sensitive information.
               </p>
               <div class="project-tech">
@@ -554,7 +619,7 @@
               <div class="project-links">
                 <a href="https://github.com/muhammadshahzaibnawaz5-svg/VaultX-To-Secure-Notes-Anything.git" target="_blank" rel="noopener noreferrer" class="project-link">
                   <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-                  Code
+                  Source Code
                 </a>
                 <a href="https://vaultx-to-secure-notes-anything-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="project-link">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
@@ -572,19 +637,18 @@
 
   <!-- ─── Resume / Experience ──────────────────────────────────────── -->
   <section id="resume" class="relative py-20 sm:py-28 md:py-36">
-    <div class="absolute inset-0 bg-linear-to-b from-transparent via-secondary/15 to-transparent pointer-events-none"></div>
+    <div class="section-glow-blob w-[450px] h-[300px] bg-purple top-1/2 left-0" style="opacity:0.04;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-
       <div class="section-wrap">
 
         <!-- Section header -->
         <div class="text-center mb-14 sm:mb-20 reveal">
           <span class="section-label">Resume</span>
-          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-8 leading-tight">
-            My Professional Journey
+          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-7 leading-tight">
+            My Professional <span class="gradient-text-accent">Journey</span>
           </h2>
-          <p class="text-cosmic-dust max-w-xl mx-auto mt-5 leading-relaxed font-decorative text-base">
+          <p class="text-stardust max-w-lg mx-auto mt-5 leading-relaxed font-decorative text-[0.95rem]">
             A timeline of certifications, training, and professional experience.
           </p>
         </div>
@@ -593,48 +657,48 @@
 
           <!-- Experience Timeline -->
           <div class="reveal">
-            <h3 class="font-display text-xl font-semibold text-star-white mb-10 flex items-center gap-3">
-              <div class="w-8 h-8 bg-accent/15 rounded-lg flex items-center justify-center">
+            <h3 class="font-display text-lg font-bold text-star-white mb-10 flex items-center gap-3">
+              <div class="w-9 h-9 bg-accent/12 rounded-xl flex items-center justify-center border border-accent/15">
                 <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
               </div>
-              Experience
+              Experience &amp; Training
             </h3>
 
             <div class="space-y-8">
 
-              <!-- Bano Qabil Frontend Course -->
+              <!-- Bano Qabil Frontend -->
               <div class="timeline-item">
                 <div class="timeline-card">
-                  <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
+                  <div class="flex flex-wrap justify-between items-start gap-3 mb-3">
                     <div>
-                      <h4 class="font-display text-base font-semibold text-star-white">Frontend Development — Certified</h4>
-                      <p class="text-accent text-sm mt-0.5">Bano Qabil — Sahiwal</p>
+                      <h4 class="font-display text-sm font-bold text-star-white">Frontend Development — Certified</h4>
+                      <p class="text-accent text-xs mt-1 font-medium">Bano Qabil — Sahiwal</p>
                     </div>
-                    <span class="px-3 py-1 bg-accent/[0.1] text-accent text-xs font-medium rounded-full border border-accent/20">
+                    <span class="px-3 py-1 bg-accent/[0.09] text-accent text-[10px] font-bold rounded-full border border-accent/18 tracking-wide uppercase">
                       2026
                     </span>
                   </div>
-                  <p class="text-cosmic-dust text-sm leading-relaxed">
+                  <p class="text-stardust text-sm leading-relaxed">
                     Completed an intensive frontend development program covering HTML5, CSS3, JavaScript, and modern frameworks. Built responsive, accessible interfaces and gained proficiency in building production-ready user interfaces.
                   </p>
                 </div>
               </div>
 
-              <!-- Bano Qabil Backend Course -->
+              <!-- Bano Qabil Backend -->
               <div class="timeline-item">
                 <div class="timeline-card">
-                  <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
+                  <div class="flex flex-wrap justify-between items-start gap-3 mb-3">
                     <div>
-                      <h4 class="font-display text-base font-semibold text-star-white">Backend Development — Certified</h4>
-                      <p class="text-accent text-sm mt-0.5">Bano Qabil — Sahiwal</p>
+                      <h4 class="font-display text-sm font-bold text-star-white">Backend Development — Certified</h4>
+                      <p class="text-accent text-xs mt-1 font-medium">Bano Qabil — Sahiwal</p>
                     </div>
-                    <span class="px-3 py-1 bg-accent/[0.1] text-accent text-xs font-medium rounded-full border border-accent/20">
+                    <span class="px-3 py-1 bg-accent/[0.09] text-accent text-[10px] font-bold rounded-full border border-accent/18 tracking-wide uppercase">
                       2026
                     </span>
                   </div>
-                  <p class="text-cosmic-dust text-sm leading-relaxed">
+                  <p class="text-stardust text-sm leading-relaxed">
                     Completed a comprehensive backend development track focused on server-side programming, REST API design, database management, and authentication. Developed skills to build and deploy scalable server applications.
                   </p>
                 </div>
@@ -643,16 +707,16 @@
               <!-- NeuroFive Internship -->
               <div class="timeline-item">
                 <div class="timeline-card">
-                  <div class="flex flex-wrap justify-between items-start gap-3 mb-4">
+                  <div class="flex flex-wrap justify-between items-start gap-3 mb-3">
                     <div>
-                      <h4 class="font-display text-base font-semibold text-star-white">Full Stack Developer Intern</h4>
-                      <p class="text-accent text-sm mt-0.5">NeuroFive Solutions — Remote</p>
+                      <h4 class="font-display text-sm font-bold text-star-white">Full Stack Developer Intern</h4>
+                      <p class="text-accent text-xs mt-1 font-medium">NeuroFive Solutions — Remote</p>
                     </div>
-                    <span class="px-3 py-1 bg-accent/[0.1] text-accent text-xs font-medium rounded-full border border-accent/20">
+                    <span class="px-3 py-1 bg-accent/[0.09] text-accent text-[10px] font-bold rounded-full border border-accent/18 tracking-wide uppercase">
                       2026
                     </span>
                   </div>
-                  <p class="text-cosmic-dust text-sm leading-relaxed">
+                  <p class="text-stardust text-sm leading-relaxed">
                     Contributed to full-stack web development tasks using modern JavaScript frameworks and database management. Collaborated remotely with the development team to build and refine features, gaining hands-on experience with the complete development lifecycle.
                   </p>
                 </div>
@@ -665,8 +729,8 @@
           <div class="reveal reveal-d1">
 
             <!-- Skill bars -->
-            <h3 class="font-display text-xl font-semibold text-star-white mb-10 flex items-center gap-3">
-              <div class="w-8 h-8 bg-accent/15 rounded-lg flex items-center justify-center">
+            <h3 class="font-display text-lg font-bold text-star-white mb-10 flex items-center gap-3">
+              <div class="w-9 h-9 bg-accent/12 rounded-xl flex items-center justify-center border border-accent/15">
                 <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                 </svg>
@@ -674,12 +738,12 @@
               Proficiency
             </h3>
 
-            <div class="space-y-7">
+            <div class="space-y-6">
 
               <div>
-                <div class="flex justify-between items-center">
-                  <span class="text-star-white text-sm font-medium">React / React Native</span>
-                  <span class="text-accent text-sm font-semibold">95%</span>
+                <div class="proficiency-row">
+                  <span class="proficiency-name">React / React Native</span>
+                  <span class="proficiency-pct">95%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-bar-fill" data-width="95%"></div>
@@ -687,9 +751,9 @@
               </div>
 
               <div>
-                <div class="flex justify-between items-center">
-                  <span class="text-star-white text-sm font-medium">JavaScript / TypeScript</span>
-                  <span class="text-accent text-sm font-semibold">90%</span>
+                <div class="proficiency-row">
+                  <span class="proficiency-name">JavaScript / TypeScript</span>
+                  <span class="proficiency-pct">90%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-bar-fill" data-width="90%"></div>
@@ -697,9 +761,9 @@
               </div>
 
               <div>
-                <div class="flex justify-between items-center">
-                  <span class="text-star-white text-sm font-medium">HTML5 / CSS3</span>
-                  <span class="text-accent text-sm font-semibold">95%</span>
+                <div class="proficiency-row">
+                  <span class="proficiency-name">HTML5 / CSS3</span>
+                  <span class="proficiency-pct">95%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-bar-fill" data-width="95%"></div>
@@ -707,9 +771,9 @@
               </div>
 
               <div>
-                <div class="flex justify-between items-center">
-                  <span class="text-star-white text-sm font-medium">Tailwind CSS</span>
-                  <span class="text-accent text-sm font-semibold">92%</span>
+                <div class="proficiency-row">
+                  <span class="proficiency-name">Tailwind CSS</span>
+                  <span class="proficiency-pct">92%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-bar-fill" data-width="92%"></div>
@@ -717,9 +781,9 @@
               </div>
 
               <div>
-                <div class="flex justify-between items-center">
-                  <span class="text-star-white text-sm font-medium">Node.js</span>
-                  <span class="text-accent text-sm font-semibold">80%</span>
+                <div class="proficiency-row">
+                  <span class="proficiency-name">Node.js</span>
+                  <span class="proficiency-pct">80%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-bar-fill" data-width="80%"></div>
@@ -727,9 +791,9 @@
               </div>
 
               <div>
-                <div class="flex justify-between items-center">
-                  <span class="text-star-white text-sm font-medium">UI / UX Design</span>
-                  <span class="text-accent text-sm font-semibold">85%</span>
+                <div class="proficiency-row">
+                  <span class="proficiency-name">UI / UX Design</span>
+                  <span class="proficiency-pct">85%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-bar-fill" data-width="85%"></div>
@@ -739,10 +803,10 @@
             </div>
 
             <!-- Education -->
-            <div class="mt-14">
-              <h4 class="font-display text-xl font-semibold text-star-white mb-8 flex items-center gap-3">
-                <div class="w-8 h-8 bg-accent/15 rounded-lg flex items-center justify-center">
-                  <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="mt-12">
+              <h4 class="font-display text-lg font-bold text-star-white mb-6 flex items-center gap-3">
+                <div class="w-9 h-9 bg-gold/10 rounded-xl flex items-center justify-center border border-gold/15">
+                  <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
                   </svg>
@@ -750,13 +814,13 @@
                 Education
               </h4>
 
-              <div class="timeline-card cursor-pointer">
+              <div class="timeline-card">
                 <div class="flex justify-between items-start gap-4">
                   <div>
-                    <h5 class="font-display text-base font-semibold text-star-white">B.S. Software Engineering</h5>
-                    <p class="text-cosmic-dust text-sm mt-1">University of Sahiwal</p>
+                    <h5 class="font-display text-sm font-bold text-star-white">B.S. Software Engineering</h5>
+                    <p class="text-stardust text-xs mt-1.5">University of Sahiwal</p>
                   </div>
-                  <span class="px-3 py-1 bg-gold/[0.1] text-gold text-xs font-semibold rounded-full border border-gold/20 shrink-0">
+                  <span class="px-3 py-1 bg-gold/[0.09] text-gold text-[10px] font-bold rounded-full border border-gold/20 shrink-0 tracking-wide uppercase">
                     Current
                   </span>
                 </div>
@@ -771,19 +835,18 @@
 
   <!-- ─── Achievements / Learning ──────────────────────────────────── -->
   <section id="achievements" class="relative py-20 sm:py-28 md:py-36">
-    <div class="absolute inset-0 bg-linear-to-b from-transparent via-nebula-mid/10 to-transparent pointer-events-none"></div>
+    <div class="section-glow-blob w-[400px] h-[300px] bg-aurora top-1/2 right-1/4" style="opacity:0.03;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-
       <div class="section-wrap">
 
         <!-- Section header -->
         <div class="text-center mb-14 sm:mb-20 reveal">
           <span class="section-label">Learning</span>
-          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-8 leading-tight">
-            Certifications & Achievements
+          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-7 leading-tight">
+            Certifications &amp; <span class="gradient-text-accent">Achievements</span>
           </h2>
-          <p class="text-cosmic-dust max-w-xl mx-auto mt-5 leading-relaxed font-decorative text-base">
+          <p class="text-stardust max-w-lg mx-auto mt-5 leading-relaxed font-decorative text-[0.95rem]">
             Courses, certifications, and milestones on my journey to becoming a professional developer.
           </p>
         </div>
@@ -791,55 +854,55 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
 
           <div class="achievement-card reveal">
-            <div class="achievement-icon" style="background: rgba(232,64,92,0.1); color: var(--color-accent);">
+            <div class="achievement-icon" style="background: rgba(232,64,92,0.1); color: var(--color-accent); border: 1px solid rgba(232,64,92,0.15);">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
               </svg>
             </div>
             <div class="flex-1 min-w-0">
-              <p class="text-star-white text-sm font-medium truncate">FreeCodeCamp — Responsive Web Design</p>
-              <p class="text-cosmic-dust text-xs mt-0.5">Completed • 300 hours</p>
+              <p class="text-star-white text-sm font-semibold">FreeCodeCamp — Responsive Web Design</p>
+              <p class="text-stardust text-xs mt-1">Completed · 300 hours</p>
             </div>
-            <span class="achievement-badge bg-accent/[0.1] text-accent border border-accent/15">Certified</span>
+            <span class="achievement-badge bg-accent/[0.09] text-accent border border-accent/20">Certified</span>
           </div>
 
           <div class="achievement-card reveal reveal-d1">
-            <div class="achievement-icon" style="background: rgba(124,107,255,0.1); color: var(--color-purple);">
+            <div class="achievement-icon" style="background: rgba(124,107,255,0.1); color: var(--color-purple); border: 1px solid rgba(124,107,255,0.15);">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
               </svg>
             </div>
             <div class="flex-1 min-w-0">
-              <p class="text-star-white text-sm font-medium truncate">The Odin Project — Full Stack JavaScript</p>
-              <p class="text-cosmic-dust text-xs mt-0.5">In progress • Node.js path</p>
+              <p class="text-star-white text-sm font-semibold">The Odin Project — Full Stack JS</p>
+              <p class="text-stardust text-xs mt-1">In progress · Node.js path</p>
             </div>
-            <span class="achievement-badge bg-purple/[0.1] text-purple border border-purple/15">In Progress</span>
+            <span class="achievement-badge bg-purple/[0.09] text-purple border border-purple/20">In Progress</span>
           </div>
 
           <div class="achievement-card reveal reveal-d2">
-            <div class="achievement-icon" style="background: rgba(212,168,67,0.1); color: var(--color-gold);">
+            <div class="achievement-icon" style="background: rgba(212,168,67,0.1); color: var(--color-gold); border: 1px solid rgba(212,168,67,0.15);">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
               </svg>
             </div>
             <div class="flex-1 min-w-0">
-              <p class="text-star-white text-sm font-medium truncate">JavaScript Algorithms & Data Structures</p>
-              <p class="text-cosmic-dust text-xs mt-0.5">FreeCodeCamp • In progress</p>
+              <p class="text-star-white text-sm font-semibold">JS Algorithms &amp; Data Structures</p>
+              <p class="text-stardust text-xs mt-1">FreeCodeCamp · In progress</p>
             </div>
-            <span class="achievement-badge bg-gold/[0.1] text-gold border border-gold/15">Learning</span>
+            <span class="achievement-badge bg-gold/[0.09] text-gold border border-gold/20">Learning</span>
           </div>
 
           <div class="achievement-card reveal reveal-d3">
-            <div class="achievement-icon" style="background: rgba(72,229,194,0.1); color: var(--color-aurora);">
+            <div class="achievement-icon" style="background: rgba(72,229,194,0.1); color: var(--color-aurora); border: 1px solid rgba(72,229,194,0.15);">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
               </svg>
             </div>
             <div class="flex-1 min-w-0">
-              <p class="text-star-white text-sm font-medium truncate">React — The Complete Guide</p>
-              <p class="text-cosmic-dust text-xs mt-0.5">Udemy • Section 12 / 30</p>
+              <p class="text-star-white text-sm font-semibold">React — The Complete Guide</p>
+              <p class="text-stardust text-xs mt-1">Udemy · Section 12 / 30</p>
             </div>
-            <span class="achievement-badge bg-aurora/[0.1] text-aurora border border-aurora/15">In Progress</span>
+            <span class="achievement-badge bg-aurora/[0.09] text-aurora border border-aurora/20">In Progress</span>
           </div>
 
         </div>
@@ -849,20 +912,18 @@
 
   <!-- ─── Contact ──────────────────────────────────────────────────── -->
   <section id="contact" class="relative py-20 sm:py-28 md:py-36">
-    <div class="absolute inset-0 bg-linear-to-t from-nebula-mid/30 to-transparent pointer-events-none"></div>
-    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-accent/5 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="section-glow-blob w-[500px] h-[300px] bg-accent bottom-0 left-1/2 -translate-x-1/2" style="opacity:0.04;"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-
       <div class="section-wrap">
 
         <!-- Section header -->
         <div class="text-center mb-14 sm:mb-20 reveal">
           <span class="section-label">Contact</span>
-          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-8 leading-tight">
-            Let's Work Together
+          <h2 class="font-display-alt font-bold text-3xl md:text-4xl lg:text-5xl text-star-white mt-7 leading-tight">
+            Let's Work <span class="gradient-text-accent">Together</span>
           </h2>
-          <p class="text-cosmic-dust max-w-xl mx-auto mt-5 leading-relaxed font-decorative text-base">
+          <p class="text-stardust max-w-lg mx-auto mt-5 leading-relaxed font-decorative text-[0.95rem]">
             Have a project in mind? Let's discuss how I can help bring your vision to life.
           </p>
         </div>
@@ -870,7 +931,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
 
           <!-- Contact info -->
-          <div class="reveal space-y-4">
+          <div class="reveal space-y-3">
+
+            <p class="text-stardust text-sm font-medium mb-6 leading-relaxed">
+              I'm currently open to freelance projects, internships, and full-time opportunities. Feel free to reach out through any of the channels below.
+            </p>
 
             <a href="mailto:muhammadshahzaibnawaz5@gmail.com" class="contact-card no-underline">
               <div class="contact-icon">
@@ -879,7 +944,7 @@
                 </svg>
               </div>
               <div>
-                <p class="text-cosmic-dust text-xs mb-0.5">Email</p>
+                <p class="text-stardust text-[11px] mb-0.5 uppercase tracking-wider font-semibold">Email</p>
                 <p class="text-star-white text-sm font-medium">muhammadshahzaibnawaz5@gmail.com</p>
               </div>
             </a>
@@ -891,8 +956,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-cosmic-dust text-xs mb-0.5">Phone</p>
-                <p class="text-star-white text-sm font-medium">+92 3261762648</p>
+                <p class="text-stardust text-[11px] mb-0.5 uppercase tracking-wider font-semibold">Phone</p>
+                <p class="text-star-white text-sm font-medium">+92 326 176 2648</p>
               </div>
             </a>
 
@@ -904,8 +969,8 @@
                 </svg>
               </div>
               <div>
-                <p class="text-cosmic-dust text-xs mb-0.5">Location</p>
-                <p class="text-star-white text-sm font-medium">Punjab, Sahiwal Pakistan</p>
+                <p class="text-stardust text-[11px] mb-0.5 uppercase tracking-wider font-semibold">Location</p>
+                <p class="text-star-white text-sm font-medium">Punjab, Sahiwal — Pakistan</p>
               </div>
             </div>
 
@@ -916,7 +981,7 @@
                 </svg>
               </div>
               <div>
-                <p class="text-cosmic-dust text-xs mb-0.5">LinkedIn</p>
+                <p class="text-stardust text-[11px] mb-0.5 uppercase tracking-wider font-semibold">LinkedIn</p>
                 <p class="text-star-white text-sm font-medium">linkedin.com/in/muhammad-shahzaib</p>
               </div>
             </a>
@@ -928,7 +993,7 @@
                 </svg>
               </div>
               <div>
-                <p class="text-cosmic-dust text-xs mb-0.5">GitHub</p>
+                <p class="text-stardust text-[11px] mb-0.5 uppercase tracking-wider font-semibold">GitHub</p>
                 <p class="text-star-white text-sm font-medium">github.com/muhammadshahzaibnawaz5-svg</p>
               </div>
             </a>
@@ -937,15 +1002,15 @@
           <!-- Contact form -->
           <div class="reveal reveal-d1">
             <form id="contact-form" class="contact-form" novalidate>
-              <div class="form-group grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div class="form-group grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
                   <span class="form-error" id="name-error">Please enter your name</span>
                 </div>
                 <div>
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" id="email" name="email" class="form-input" placeholder="Your E-mail" required>
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
                   <span class="form-error" id="email-error">Please enter a valid email</span>
                 </div>
               </div>
@@ -985,60 +1050,72 @@
   </button>
 
   <!-- ─── Footer ───────────────────────────────────────────────────── -->
-  <footer class="border-t border-white/5 py-12">
+  <footer class="relative py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+      <div class="footer-inner">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
 
-        <a href="#hero" class="font-display text-xl font-bold text-star-white tracking-tight">
-          <span class="text-accent">S</span>hahzaib
-        </a>
+          <!-- Logo -->
+          <a href="#hero" class="nav-logo-mark group" aria-label="Home">
+            <div class="logo-icon group-hover:scale-105 transition-transform duration-300">S</div>
+        <span class="text-base font-bold gradient-text-accent tracking-tight">hahzaib</span>
+          </a>
 
-        <div class="flex gap-8">
-          <a href="#hero"       class="text-cosmic-dust hover:text-star-white transition-colors text-sm">Home</a>
-          <a href="#about"      class="text-cosmic-dust hover:text-star-white transition-colors text-sm">About</a>
-          <a href="#services"   class="text-cosmic-dust hover:text-star-white transition-colors text-sm">Skills</a>
-          <a href="#projects"   class="text-cosmic-dust hover:text-star-white transition-colors text-sm">Projects</a>
-          <a href="#achievements" class="text-cosmic-dust hover:text-star-white transition-colors text-sm">Achievements</a>
-          <a href="#resume"     class="text-cosmic-dust hover:text-star-white transition-colors text-sm">Resume</a>
-          <a href="#contact"    class="text-cosmic-dust hover:text-star-white transition-colors text-sm">Contact</a>
+          <!-- Nav links -->
+          <nav aria-label="Footer navigation" class="flex flex-wrap justify-center gap-6">
+            <a href="#hero"         class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">Home</a>
+            <a href="#about"        class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">About</a>
+            <a href="#services"     class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">Skills</a>
+            <a href="#projects"     class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">Projects</a>
+            <a href="#achievements" class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">Achievements</a>
+            <a href="#resume"       class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">Resume</a>
+            <a href="#contact"      class="text-stardust hover:text-star-white transition-colors text-xs uppercase tracking-wider font-semibold">Contact</a>
+          </nav>
+
+          <!-- Socials -->
+          <div class="flex gap-2.5">
+            <a href="https://github.com/muhammadshahzaibnawaz5-svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn !w-9 !h-9">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-shahzaib-687219410/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn !w-9 !h-9">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://x.com/@shahzaibefi8" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" class="social-btn !w-9 !h-9">
+              <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <div class="flex gap-3">
-          <a href="https://github.com/muhammadshahzaibnawaz5-svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn !w-10 !h-10">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/muhammad-shahzaib-687219410/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn !w-10 !h-10">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-          </a>
-          <a href="https://x.com/@shahzaibefi8" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" class="social-btn !w-10 !h-10">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-            </svg>
-          </a>
+        <!-- Bottom bar -->
+        <div class="mt-8 pt-6 border-t border-white/[0.05] flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p class="text-cosmic-dust text-xs tracking-wide font-body">
+            &copy; <span id="year">2026</span> <span class="gradient-text-accent">M Shahzaib</span> — Built with precision and passion.
+          </p>
+          <p class="text-cosmic-dust text-xs tracking-wide">
+            Designed &amp; Developed by
+            <span class="gradient-text-accent font-semibold">Shahzaib</span>
+          </p>
         </div>
-      </div>
-
-      <div class="mt-10 pt-8 border-t border-white/5 text-center">
-        <p class="text-cosmic-dust text-xs tracking-wide font-body">
-          &copy; <span id="year">2026</span> M Shahzaib — Built with precision and passion.
-        </p>
       </div>
     </div>
   </footer>
 
 
   <!-- Toast Notification -->
-<div id="toast"></div>
+  <div id="toast"></div>
 
   <!-- Custom Cursor -->
-<div id="custom-cursor"></div>
+  <div id="custom-cursor"></div>
 
-<!-- Bubble Container -->
-<div id="bubble-container"></div>
+  <!-- Bubble Container -->
+  <div id="bubble-container"></div>
+
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
